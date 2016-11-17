@@ -22,5 +22,5 @@ podfile_path: Podfile
 catalogs:
 - 'https://github.com/noxt/generamba-templates'
 templates:
-- {name: viper_swift, git: 'https://github.com/noxt/generamba-templates'}
+- {name: swifty_viper, git: 'https://github.com/noxt/generamba-templates'}
 
