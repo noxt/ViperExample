@@ -1,0 +1,26 @@
+### Headers settings
+company: Dmitry Ivanenko
+
+### Xcode project settings
+project_name: TouchTest
+xcodeproj_path: TouchTest.xcodeproj
+
+### Code generation settings section
+# The main project target name
+project_target: TouchTest
+
+# The file path for new modules
+project_file_path: "TouchTest/PresentationLayer/"
+
+# The Xcode group path to new modules
+project_group_path: "TouchTest/PresentationLayer/"
+
+### Dependencies settings section
+podfile_path: Podfile
+
+### Templates
+catalogs:
+- 'https://github.com/noxt/generamba-templates'
+templates:
+- {name: viper_swift, git: 'https://github.com/noxt/generamba-templates'}
+

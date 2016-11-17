@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Repository Details View Controller-->
+        <scene sceneID="DVO-0b-rLd">
+            <objects>
+                <viewController storyboardIdentifier="RepositoryDetailsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="c3f-xY-BBf" customClass="RepositoryDetailsViewController" customModule="TouchTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7Xr-Fe-JmS"/>
+                        <viewControllerLayoutGuide type="bottom" id="J0w-Kb-thr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zhi-Wn-em5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="52x-yP-rcg">
+                                <rect key="frame" x="166.5" y="323.5" width="42" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7vg-uK-kce">
+                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Fne-Ls-vMS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Add &quot;!&quot;"/>
+                                <connections>
+                                    <action selector="addButtonPressed" destination="c3f-xY-BBf" eventType="touchUpInside" id="uEZ-HJ-Goj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="52x-yP-rcg" firstAttribute="top" relation="greaterThanOrEqual" secondItem="zhi-Wn-em5" secondAttribute="top" constant="15" id="4qV-1y-NS3"/>
+                            <constraint firstItem="7vg-uK-kce" firstAttribute="top" relation="greaterThanOrEqual" secondItem="52x-yP-rcg" secondAttribute="bottom" constant="15" id="9Kh-ip-srb"/>
+                            <constraint firstAttribute="trailing" secondItem="7vg-uK-kce" secondAttribute="trailing" id="BHY-zE-GUK"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="52x-yP-rcg" secondAttribute="trailing" constant="15" id="CQA-ce-4Bi"/>
+                            <constraint firstItem="52x-yP-rcg" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="zhi-Wn-em5" secondAttribute="leading" constant="15" id="EJI-ak-uxr"/>
+                            <constraint firstItem="52x-yP-rcg" firstAttribute="centerX" secondItem="zhi-Wn-em5" secondAttribute="centerX" id="XTV-EP-MGK"/>
+                            <constraint firstItem="52x-yP-rcg" firstAttribute="centerY" secondItem="zhi-Wn-em5" secondAttribute="centerY" id="ayC-GX-6AV"/>
+                            <constraint firstItem="7vg-uK-kce" firstAttribute="leading" secondItem="zhi-Wn-em5" secondAttribute="leading" id="lYe-B1-BHE"/>
+                            <constraint firstAttribute="bottom" secondItem="7vg-uK-kce" secondAttribute="bottom" id="m1u-4E-sFt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addButton" destination="7vg-uK-kce" id="Urc-yC-szM"/>
+                        <outlet property="contentLabel" destination="52x-yP-rcg" id="EPT-Xu-kRz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rJu-qq-15P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-92" y="30"/>
+        </scene>
+    </scenes>
+</document>
